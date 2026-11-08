@@ -459,7 +459,7 @@
           </div>
           <div class="text-[11px] font-medium text-slate-400 mt-2 mb-1.5 flex items-center justify-between">
             <span>Ranks Tier 4–6 Test Bench:</span>
-            <span class="text-slate-500">Rank-based, up to 250,000</span>
+            <span class="text-slate-500">Rank-based, up to 1,000,000</span>
           </div>
           <div class="flex flex-wrap gap-1.5">
             <button class="preset-btn px-2.5 py-1 text-xs font-mono rounded-lg bg-yellow-400/10 hover:bg-yellow-400/20 text-yellow-200 border border-yellow-400/40 hover:border-yellow-300 transition-all" data-val="2">2 (Divine Cheese)</button>
@@ -960,6 +960,7 @@
         <button id="sub-btn-wheel" class="px-3.5 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition-all">🛞 Cheese Wheel</button>
         <button id="sub-btn-pull" class="px-3.5 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition-all">🪢 Cheese Pull</button>
         <button id="sub-btn-sandwich" class="px-3.5 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition-all">🥪 Cheese Sandwich</button>
+        <button id="sub-btn-cheeserules" class="px-3.5 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition-all">🧀 100 Rules</button>
       </div>
 
     <!-- VIEW 6: CHEESE RESONANCE NUMBERS -->
@@ -1035,7 +1036,7 @@
         </div>
 
         <div class="p-3 rounded-lg bg-slate-950/60 border border-slate-800 text-[11px] text-slate-400 leading-relaxed">
-          Super Cheese and Pure Cheese checks cover values up to 250,000, the range the Engine precomputes. Larger rotations are treated as not Super or Pure.
+          Super Cheese and Pure Cheese checks cover values up to 1,000,000, the range the Engine precomputes. Larger rotations are treated as not Super or Pure.
         </div>
 
         <div class="flex flex-wrap items-end gap-3">
@@ -1177,6 +1178,40 @@
             <p>All-Cheesy Path · Mixed Filling · Extra Cheesy · Dry Filling · Layered Filling · Open-Faced</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- VIEW 7: 100 CHEESE BLOCK RULES -->
+    <section id="view-cheeserules" class="space-y-6 hidden">
+      <div class="bg-slate-900/90 rounded-2xl border border-slate-800 p-6 space-y-5">
+        <div class="border-b border-slate-800 pb-4">
+          <div class="flex items-center gap-2 text-orange-400 text-xs font-mono font-bold uppercase tracking-wider mb-1"><span>🧀</span> Rules: 100 Cheese Block Rules</div>
+          <h2 class="text-xl font-bold text-white">100 Rule Calculator</h2>
+          <p class="text-xs text-slate-400 mt-1">Every rule runs on the same number. Class tags appear next to the number in the banner, and selecting a row shows that rule's path.</p>
+        </div>
+        <div class="flex flex-wrap items-end gap-3">
+          <div class="flex flex-col gap-1">
+            <label for="cr-input" class="text-[11px] font-mono text-slate-400 uppercase">Number n</label>
+            <input id="cr-input" type="text" inputmode="numeric" value="1234" class="bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 font-mono text-white w-56 focus:outline-none focus:border-orange-500" />
+          </div>
+          <button id="cr-run" class="px-4 py-2 rounded-lg bg-orange-500 text-slate-950 font-bold text-xs hover:bg-orange-400 transition-all">Run All 100 Rules</button>
+        </div>
+        <div class="space-y-2">
+          <div class="text-[11px] font-medium text-slate-400">100 Rules Test Bench:</div>
+          <div class="flex flex-wrap gap-1.5">
+            <button class="cr-preset px-2.5 py-1 text-xs font-mono rounded-lg bg-orange-500/10 hover:bg-orange-500/20 text-orange-200 border border-orange-500/40 hover:border-orange-400 transition-all" data-val="1234">1234</button>
+            <button class="cr-preset px-2.5 py-1 text-xs font-mono rounded-lg bg-orange-500/10 hover:bg-orange-500/20 text-orange-200 border border-orange-500/40 hover:border-orange-400 transition-all" data-val="42">42 · Cliffhanger</button>
+            <button class="cr-preset px-2.5 py-1 text-xs font-mono rounded-lg bg-orange-500/10 hover:bg-orange-500/20 text-orange-200 border border-orange-500/40 hover:border-orange-400 transition-all" data-val="1221">1221 · Coated</button>
+            <button class="cr-preset px-2.5 py-1 text-xs font-mono rounded-lg bg-orange-500/10 hover:bg-orange-500/20 text-orange-200 border border-orange-500/40 hover:border-orange-400 transition-all" data-val="1213">1213 · Gloop</button>
+            <button class="cr-preset px-2.5 py-1 text-xs font-mono rounded-lg bg-orange-500/10 hover:bg-orange-500/20 text-orange-200 border border-orange-500/40 hover:border-orange-400 transition-all" data-val="135">135 · Smelly</button>
+            <button class="cr-preset px-2.5 py-1 text-xs font-mono rounded-lg bg-orange-500/10 hover:bg-orange-500/20 text-orange-200 border border-orange-500/40 hover:border-orange-400 transition-all" data-val="7597">7597 · 42 rules</button>
+            <button class="cr-preset px-2.5 py-1 text-xs font-mono rounded-lg bg-orange-500/10 hover:bg-orange-500/20 text-orange-200 border border-orange-500/40 hover:border-orange-400 transition-all" data-val="528795">528795 · 43 rules</button>
+            <button class="cr-preset px-2.5 py-1 text-xs font-mono rounded-lg bg-orange-500/10 hover:bg-orange-500/20 text-orange-200 border border-orange-500/40 hover:border-orange-400 transition-all" data-val="746487">746487 · 43 rules</button>
+          </div>
+        </div>
+        <div id="cr-summary"></div>
+        <div id="cr-table" class="overflow-x-auto rounded-xl border border-slate-800"></div>
+        <div id="cr-detail"></div>
       </div>
     </section>
 
@@ -1412,7 +1447,7 @@
     // CHEESE BLOCK ENGINE
     // ==========================================
     const Engine = (() => {
-      const MAX_PRECOMPUTE = 250000;
+      const MAX_PRECOMPUTE = 1000000;
       
       // Step function
       function step(n) {
@@ -2009,7 +2044,7 @@
 
       function buildHTML(n, t) {
         if (!t) {
-          return '<div class="text-xs text-slate-400">Rank Tiers 4–6 need the Pure Cheese and Extra Stinky lists, which only go up to 250,000.</div>';
+          return '<div class="text-xs text-slate-400">Rank Tiers 4–6 need the Pure Cheese and Extra Stinky lists, which only go up to 1,000,000.</div>';
         }
         const got = TIERS.filter(([k]) => t[k]);
         const body = got.length
@@ -2037,7 +2072,7 @@
           </div>`;
       }
       function tagText(t) {
-        if (!t) return 'NEEDS ≤ 250,000';
+        if (!t) return 'NEEDS ≤ 1,000,000';
         const top = TIERS.filter(([k]) => t[k]).pop();
         return top ? top[1] : 'NONE';
       }
@@ -2357,7 +2392,7 @@
         else if (Cr < T) primary = 'Greasy Wheel';
         else primary = 'Perfect Cheese Wheel';
 
-        // Special subclasses. "subs" are confirmed; "unk" needs ranks above 250,000.
+        // Special subclasses. "subs" are confirmed; "unk" needs ranks above 1,000,000.
         const subs = [];
         const unk = [];
         if (rows.every(r => r.c)) {
@@ -2418,7 +2453,7 @@
         const r = analyze(n);
         if (r.kind !== 'ok' || r.Cr === 0) return '';
         const subItems = (r.subs.length || r.unk.length)
-          ? [...r.subs.map(s => item(s, SUB_CLS)), ...r.unk.map(u => item(u + ' (needs ranks ≤ 250,000)', UNK_CLS))].join('')
+          ? [...r.subs.map(s => item(s, SUB_CLS)), ...r.unk.map(u => item(u + ' (needs ranks ≤ 1,000,000)', UNK_CLS))].join('')
           : '<div class="text-[11px] text-slate-500">No special subclasses</div>';
         return `
           <div class="relative inline-block res-tag-wrap">
@@ -2430,7 +2465,7 @@
               <div class="flex items-center justify-between text-[10px] font-mono text-slate-500">
                 <span>W = ${r.Cr}/${r.T}</span><span>D = ${r.D ?? '?'}</span><span>${r.T} rotation${r.T === 1 ? '' : 's'}</span>
               </div>
-              <div>${heading('Dominance')}${r.dominance ? item(r.dominance, DOM_CLS) : item('Needs ranks ≤ 250,000', UNK_CLS)}</div>
+              <div>${heading('Dominance')}${r.dominance ? item(r.dominance, DOM_CLS) : item('Needs ranks ≤ 1,000,000', UNK_CLS)}</div>
               <div>${heading('Special subclasses')}<div class="flex flex-wrap gap-1.5">${subItems}</div></div>
             </div>
           </div>`;
@@ -2449,7 +2484,7 @@
             <td class="px-3 py-1.5">${flag(x.m, 'Moldy', 'bg-indigo-500/15 text-indigo-300')}</td>
           </tr>`).join('');
         const subItems = (r.subs.length || r.unk.length)
-          ? [...r.subs.map(s => item(s, SUB_CLS)), ...r.unk.map(u => item(u + ' (needs ranks ≤ 250,000)', UNK_CLS))].join('')
+          ? [...r.subs.map(s => item(s, SUB_CLS)), ...r.unk.map(u => item(u + ' (needs ranks ≤ 1,000,000)', UNK_CLS))].join('')
           : '<span class="text-xs text-slate-500">None</span>';
         return `
           <div class="space-y-5">
@@ -2460,7 +2495,7 @@
               <div class="p-3 rounded-xl bg-slate-950 border border-slate-800"><div class="text-[10px] font-mono text-slate-500 uppercase">Primary</div><div class="text-sm font-bold text-emerald-200">${displayLabel(r)}</div></div>
             </div>
             <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-3">
-              <div class="text-xs font-bold text-slate-200">Dominance: <span class="text-amber-300">${r.dominance ?? 'Unknown (needs ranks ≤ 250,000)'}</span></div>
+              <div class="text-xs font-bold text-slate-200">Dominance: <span class="text-amber-300">${r.dominance ?? 'Unknown (needs ranks ≤ 1,000,000)'}</span></div>
               <div>${heading('Special subclasses')}<div class="flex flex-wrap gap-2">${subItems}</div></div>
             </div>
             <div class="overflow-x-auto rounded-xl border border-slate-800">
@@ -2727,7 +2762,8 @@
         resonance: { view: 'view-resonance', btn: 'sub-btn-resonance', show: () => ResonanceView.render() },
         wheel: { view: 'view-wheel', btn: 'sub-btn-wheel', show: () => WheelView.render() },
         pull: { view: 'view-pull', btn: 'sub-btn-pull', show: () => RuleKit.render('pull') },
-        sandwich: { view: 'view-sandwich', btn: 'sub-btn-sandwich', show: () => RuleKit.render('sandwich') }
+        sandwich: { view: 'view-sandwich', btn: 'sub-btn-sandwich', show: () => RuleKit.render('sandwich') },
+        cheeserules: { view: 'view-cheeserules', btn: 'sub-btn-cheeserules', show: () => RuleBook.render() }
       };
       let current = 'resonance';
       function show(key) {
@@ -2750,6 +2786,682 @@
         Object.keys(SUBS).forEach(k => document.getElementById(SUBS[k].btn).addEventListener('click', () => show(k)));
       });
       return { show, open, onShow };
+    })();
+
+    // ==========================================
+    // 100 CHEESE BLOCK RULES
+    // Each rule: f(s, t, ctx) -> next digit string, or {v, label} to end with a label.
+    // end(v, t, ctx) -> label when the path stops at v, otherwise null.
+    // start: 'check' tests the input before any step (else the first step is always applied).
+    // ==========================================
+    const RuleBook = (() => {
+      const CAP = 200;        // step cap
+      const MAX_LEN = 5000;   // values longer than this end the path at the rule's cap label
+
+      // ----- digit helpers (inputs are digit strings with no leading zeros) -----
+      const strip = s => { const t = String(s).replace(/^0+(?=\d)/, ''); return t === '' ? '0' : t; };
+      const D = s => Array.from(s, Number);
+      const dsum = s => D(s).reduce((a, b) => a + b, 0);
+      const mx = s => Math.max(...D(s));
+      const mn = s => Math.min(...D(s));
+      const count = (s, ch) => s.split(ch).length - 1;
+      const cut = (s, ch) => { const i = s.indexOf(ch); return i < 0 ? s : s.slice(0, i) + s.slice(i + 1); };
+      const rev = s => strip(Array.from(s).reverse().join(''));
+      const isPal = s => s === Array.from(s).reverse().join('');
+      const isPrime = m => { if (m < 2) return false; for (let i = 2; i * i <= m; i++) if (m % i === 0) return false; return true; };
+      const isSquare = m => { const r = Math.round(Math.sqrt(m)); return r * r === m; };
+      const isTriangular = m => isSquare(8 * m + 1);
+      const isRepdigit = s => Array.from(s).every(c => c === s[0]);
+      const distinct = s => new Set(s).size;
+      const increasing = s => { for (let i = 0; i + 1 < s.length; i++) if (s[i] >= s[i + 1]) return false; return true; };
+      const noEqualNeighbours = s => { for (let i = 0; i + 1 < s.length; i++) if (s[i] === s[i + 1]) return false; return true; };
+      const isZigzag = s => {
+        if (s.length < 2) return false;
+        let prev = null;
+        for (let i = 0; i + 1 < s.length; i++) {
+          const c = s[i] < s[i + 1] ? '<' : s[i] > s[i + 1] ? '>' : '=';
+          if (c === '=' || c === prev) return false;
+          prev = c;
+        }
+        return true;
+      };
+      const bigProd = s => D(s).reduce((a, d) => a * BigInt(d), 1n);
+
+      // ----- end-label helpers -----
+      const E1 = v => (v.length === 1 ? `Ends at ${v}` : null);   // stops at any single digit
+      const E0 = v => (v === '0' ? 'Ends at 0' : null);           // stops at 0
+      const at1 = v => (v === '1' ? 'Ends at 1' : null);          // stops at 1
+
+      const RULES = [
+        { n: 1, name: 'Grater Fate', concept: 'Grate off the last digit each step',
+          f: s => String(BigInt(s) / 10n), end: E1 },
+
+        { n: 2, name: 'Mozzarella Drama', concept: 'Each digit raised to the power of its position',
+          f: s => { let t = 0n; D(s).forEach((d, i) => { t += BigInt(d) ** BigInt(i + 1); }); return String(t); },
+          end: v => (v === '1' ? 'Perfect Drama' : null) },
+
+        { n: 3, name: 'Brie Bloating', concept: 'Swells by its digit count every step',
+          f: s => String(BigInt(s) + BigInt(s.length)), end: () => null, capLabel: 'Bloated Out' },
+
+        { n: 4, name: 'Gouda Gossip', concept: 'Neighbouring digits report their totals',
+          f: s => {
+            if (s.length === 1) return String(BigInt(s) ** 2n);
+            let t = 0;
+            for (let i = 0; i + 1 < s.length; i++) t += Number(s[i]) + Number(s[i + 1]);
+            return String(t);
+          }, end: at1 },
+
+        { n: 5, name: 'Cheddar Cliffhanger', concept: 'Saved only if the path lands exactly on 42',
+          start: 'check', f: s => String(BigInt(s) + BigInt(dsum(s))),
+          end: v => (v === '42' ? 'Cliffhanger Saved' : null) },
+
+        { n: 6, name: 'Parmesan Aging', concept: 'Multiply the nonzero digits; the steps are its age',
+          f: s => { let p = 1n; D(s).forEach(d => { if (d) p *= BigInt(d); }); return String(p); },
+          end: (v, t) => (v.length === 1 ? `Aged ${t}` : null) },
+
+        { n: 7, name: 'Ricotta Reversal', concept: 'Add the number to its own reverse',
+          start: 'check', f: s => String(BigInt(s) + BigInt(rev(s))),
+          end: v => (isPal(v) ? 'Ricotta Palindrome' : null), capLabel: 'Stubborn Ricotta' },
+
+        { n: 8, name: 'Feta Crumbling', concept: 'Each step removes the largest digit',
+          f: s => { const r = cut(s, String(mx(s))); return r === '' ? '0' : strip(r); },
+          end: v => (v === '0' ? 'Crumbled' : at1(v)) },
+
+        { n: 9, name: 'Swiss Holes', concept: 'The number of zeros, squared',
+          f: s => String(BigInt(count(s, '0')) ** 2n), end: v => (v === '0' ? 'Holeless' : null) },
+
+        { n: 10, name: 'Halloumi Squeak', concept: 'Moves only while the digits strictly increase',
+          start: 'check', f: s => String(dsum(s)),
+          end: v => (increasing(v) ? null : 'Squeak') },
+
+        { n: 11, name: 'Camembert Smell', concept: 'Digit sum; Stinky when that sum is prime',
+          f: s => String(dsum(s)), end: E1,
+          cls: { name: 'Stinky', icon: '🦨', test: s => isPrime(dsum(s)) } },
+
+        { n: 12, name: 'Havarti Hiccup', concept: 'Even numbers halve; odd numbers hiccup up by one',
+          f: s => (BigInt(s) % 2n === 0n ? String(BigInt(s) / 2n) : String(BigInt(s) + 1n)), end: at1 },
+
+        { n: 13, name: 'Provolone Pretzel', concept: 'Add the digits in odd positions',
+          f: s => { let t = 0; D(s).forEach((d, i) => { if (i % 2 === 0) t += d; }); return String(t); },
+          end: E1 },
+
+        { n: 14, name: 'Paneer Panic', concept: 'A repeated digit causes instant panic',
+          f: s => (new Set(s).size < s.length ? { v: '0', label: 'Panic' } : String(dsum(s))), end: E1 },
+
+        { n: 15, name: 'Edam Ball Rolling', concept: 'Rotate the first digit to the end',
+          f: s => strip(s.slice(1) + s[0]), end: () => null, cyc: 'Rolling Forever', fixed: 'Rolling Forever' },
+
+        { n: 16, name: 'Roquefort Mould Club', concept: 'Count the mouldy digits: 7 and 8',
+          f: s => String(count(s, '7') + count(s, '8')), end: v => (v === '0' ? 'Mould Free' : null) },
+
+        { n: 17, name: 'Manchego Mountain', concept: 'Add the largest digit each step',
+          f: s => String(BigInt(s) + BigInt(mx(s))), end: () => null, capLabel: 'Summit Not Reached' },
+
+        { n: 18, name: 'Colby Jack Mix', concept: 'Alternate adding and subtracting the digits',
+          f: s => { let t = 0; D(s).forEach((d, i) => { t += i % 2 === 0 ? d : -d; }); return String(Math.abs(t)); },
+          end: E1 },
+
+        { n: 19, name: 'Emmental Eyeballing', concept: 'Count the holes: digits 0 and 6',
+          f: s => String(count(s, '0') + count(s, '6')), end: v => (v === '0' ? 'Holey Enough' : null) },
+
+        { n: 20, name: 'Boursin Herb Blend', concept: 'Digit sum plus the number of distinct digits',
+          f: s => String(dsum(s) + distinct(s)), end: at1 },
+
+        { n: 21, name: 'Cottage Cheese Lumps', concept: 'Add the left half to the right half',
+          f: s => { const h = Math.floor(s.length / 2); return String(BigInt(s.slice(0, h) || '0') + BigInt(s.slice(h))); },
+          end: at1 },
+
+        { n: 22, name: 'Raclette Melting Point', concept: 'Digit sum; Melted when that sum is under 10',
+          f: s => String(dsum(s)), end: E1,
+          cls: { name: 'Melted', icon: '🫠', test: s => dsum(s) < 10 } },
+
+        { n: 23, name: 'Gruyère Nutty Flavour', concept: 'Count the 1s, times the digit count',
+          f: s => String(count(s, '1') * s.length), end: E0 },
+
+        { n: 24, name: 'Stilton Blue Vein', concept: 'Sum the digits that appear three or more times',
+          f: s => {
+            const c = {};
+            for (const d of s) c[d] = (c[d] || 0) + 1;
+            let t = 0;
+            for (const d in c) if (c[d] >= 3) t += Number(d);
+            return String(t);
+          }, end: v => (v === '0' ? 'Unveined' : E1(v)) },
+
+        { n: 25, name: 'Pecorino Pepper', concept: 'Odd digits get a spicy +3',
+          f: s => String(D(s).reduce((a, d) => a + (d % 2 ? d + 3 : d), 0)), end: at1 },
+
+        { n: 26, name: 'Monterey Jack Flatten', concept: 'Sum of the squares of the digits',
+          f: s => String(D(s).reduce((a, d) => a + d * d, 0)),
+          end: v => (v === '1' ? 'Happy Cheese' : null) },
+
+        { n: 27, name: 'Brie Wrapper', concept: 'Wrap up to the next power of ten: 10^k − n',
+          f: s => String(10n ** BigInt(s.length) - BigInt(s)), end: () => null, cyc: 'Wrapped', fixed: 'Wrapped' },
+
+        { n: 28, name: 'Feta Brine Bath', concept: 'Soak each digit down to half its value',
+          f: s => String(D(s).reduce((a, d) => a + Math.floor(d / 2), 0)), end: E1 },
+
+        { n: 29, name: 'Ricotta Cannoli Roll', concept: 'Keep the centre digit, or the centre average',
+          f: s => {
+            const k = s.length, d = D(s);
+            if (k % 2) return String(d[(k - 1) / 2]);
+            return String(Math.floor((d[k / 2 - 1] + d[k / 2]) / 2));
+          }, end: E1 },
+
+        { n: 30, name: 'Mascarpone Smoothness', concept: 'Largest digit minus smallest digit',
+          f: s => String(mx(s) - mn(s)), end: E1,
+          cls: { name: 'Smooth', icon: '🧈', test: s => mx(s) - mn(s) <= 1 } },
+
+        { n: 31, name: 'Taleggio Stinky Foot', concept: 'Odd length: subtract the digit sum; even: take it',
+          f: s => {
+            if (s.length % 2 === 0) return String(dsum(s));
+            const x = BigInt(s) - BigInt(dsum(s));
+            return String(x < 0n ? -x : x);
+          }, end: E1 },
+
+        { n: 32, name: 'Comté Cave Aging', concept: 'Odd steps take the digit sum; even steps hold',
+          f: (s, t) => (t % 2 ? String(dsum(s)) : s),
+          key: (v, t) => v + '|' + (t % 2), end: E1 },
+
+        { n: 33, name: 'Limburger Overpowering', concept: 'The largest digit; pungent above 7',
+          f: s => String(mx(s)), end: E1,
+          cls: { name: 'Pungent', icon: '💨', test: s => mx(s) > 7 } },
+
+        { n: 34, name: 'Stracchino Soft Melt', concept: 'Divide by the smallest nonzero digit',
+          f: s => String(BigInt(s) / BigInt(Math.min(...D(s).filter(d => d > 0)))),
+          end: at1, fixed: 'Stracchino Stuck' },
+
+        { n: 35, name: 'Asiago Crackers', concept: 'Multiply digit pairs and add the products',
+          f: s => {
+            let t = 0;
+            for (let i = 0; i < s.length; i += 2) {
+              t += i + 1 < s.length ? Number(s[i]) * Number(s[i + 1]) : Number(s[i]);
+            }
+            return String(t);
+          }, end: E1 },
+
+        { n: 36, name: 'Queso Fresco Freshness', concept: 'Largest digit; fresh when no digit is above 3',
+          f: s => String(mx(s)), end: E1,
+          cls: { name: 'Fresh', icon: '🥬', test: s => mx(s) <= 3 } },
+
+        { n: 37, name: 'Muenster Mild', concept: 'Every digit loses one flavour point (0 stays 0)',
+          f: s => strip(D(s).map(d => Math.max(d - 1, 0)).join('')), end: E1 },
+
+        { n: 38, name: 'Gorgonzola Crumble', concept: 'Keep every other digit (positions 1, 3, 5…)',
+          f: s => strip(Array.from(s).filter((_, i) => i % 2 === 0).join('')), end: E1 },
+
+        { n: 39, name: 'Jarlsberg Holes', concept: 'Count the loops: 0, 6, 9 = one; 8 = two',
+          f: s => {
+            let t = 0;
+            for (const d of s) { if (d === '8') t += 2; else if ('069'.includes(d)) t += 1; }
+            return String(t);
+          }, end: E0 },
+
+        { n: 40, name: 'Cream Cheese Schmear', concept: 'Sum of position times digit',
+          f: s => String(D(s).reduce((a, d, i) => a + (i + 1) * d, 0)), end: at1 },
+
+        { n: 41, name: 'Velveeta Processing', concept: 'Digit sum plus the digit count',
+          f: s => String(dsum(s) + s.length), end: at1 },
+
+        { n: 42, name: 'Mimolette Orange Rind', concept: 'Peel the middle off when both ends match',
+          f: s => (s[0] !== s[s.length - 1] ? s : strip(s.slice(1, -1) || '0')),
+          end: E0, fixed: 'Rind Intact' },
+
+        { n: 43, name: 'Burrata Burst', concept: 'Multiples of 5 burst; others take the digit sum',
+          f: s => (BigInt(s) % 5n === 0n ? { v: '0', label: 'Burst' } : String(dsum(s))), end: E1 },
+
+        { n: 44, name: 'Lactose Intolerant Path', concept: 'Remove zeros if present; otherwise digit sum',
+          f: s => (s.includes('0') ? strip(s.replace(/0/g, '')) : String(dsum(s))), end: E1 },
+
+        { n: 45, name: 'Charcuterie Average', concept: 'Digit sum divided by the digit count',
+          f: s => String(Math.floor(dsum(s) / s.length)), end: E1 },
+
+        { n: 46, name: 'Parmigiano Rind Soup', concept: 'Digital root: 1 + ((n − 1) mod 9)',
+          f: s => String((BigInt(s) - 1n) % 9n + 1n), end: E1 },
+
+        { n: 47, name: 'Halloumi Grill', concept: 'Each even digit doubles and is glued on',
+          f: s => strip(D(s).map(d => (d % 2 === 0 ? String(2 * d) : String(d))).join('')),
+          end: () => null, capLabel: 'Overgrilled' },
+
+        { n: 48, name: 'Cheese Heist', concept: 'Steal the first digit each step',
+          f: s => (s.length === 1 ? '0' : strip(s.slice(1))),
+          end: v => (v === '0' ? 'Heist Complete' : null) },
+
+        { n: 49, name: 'Gouda Wax Coat', concept: 'Coated when the first and last digits match',
+          f: s => (s[0] === s[s.length - 1] ? { v: '0', label: 'Coated' } : String(dsum(s))), end: E1 },
+
+        { n: 50, name: 'Blue Cheese Trail', concept: 'Most common digit (ties go to the largest)',
+          f: s => {
+            let best = null, bc = 0;
+            for (let d = 9; d >= 0; d--) {
+              const c = count(s, String(d));
+              if (c > bc) { bc = c; best = d; }
+            }
+            return String(best);
+          }, end: E1 },
+
+        { n: 51, name: 'Mozzarella Stick Fry', concept: 'Halve the digit sum, rounded down',
+          f: s => String(Math.floor(dsum(s) / 2)),
+          end: v => (v === '1' || v === '0' ? `Ends at ${v}` : null) },
+
+        { n: 52, name: 'Brie Triangle', concept: 'Digit sum; Triangle when that sum is triangular',
+          f: s => String(dsum(s)), end: E1,
+          cls: { name: 'Triangle', icon: '🔺', test: s => isTriangular(dsum(s)) } },
+
+        { n: 53, name: 'Feta Salad Toss', concept: 'Sort the digits in ascending order',
+          f: s => strip(D(s).sort((a, b) => a - b).join('')), end: () => null, fixed: 'Tossed' },
+
+        { n: 54, name: 'Edam Bowling Ball', concept: 'Each 1 knocks out the digit after it',
+          f: s => {
+            let out = '';
+            for (let i = 0; i < s.length; i++) {
+              out += s[i];
+              if (s[i] === '1') i++;
+            }
+            return strip(out);
+          }, end: E1 },
+
+        { n: 55, name: 'Kraft Single Wrapped', concept: 'Count distinct digits; Single when there is one',
+          f: s => String(distinct(s)), end: at1,
+          cls: { name: 'Single', icon: '🔹', test: s => distinct(s) === 1 } },
+
+        { n: 56, name: 'Mac and Cheese Cook-Off', concept: 'Digit sum applied as many times as there are digits',
+          init: s => ({ K: s.length }), cap: s => s.length,
+          f: s => String(dsum(s)), key: (v, t) => v + '|' + t,
+          end: (v, t, ctx) => (t >= ctx.K ? 'Rounds Complete' : null) },
+
+        { n: 57, name: 'Cheese String Snap', concept: 'Reverse the digits; Snapped when the reverse is bigger',
+          start: 'check', f: s => rev(s), end: v => (isPal(v) ? 'Settled Palindrome' : null),
+          cls: { name: 'Snapped', icon: '✂️', test: s => BigInt(rev(s)) > BigInt(s) } },
+
+        { n: 58, name: 'Pizza Cheese Bubble', concept: 'Largest digit; a Bubble if it appears only once',
+          f: s => String(mx(s)), end: E1,
+          cls: { name: 'Bubble', icon: '🫧', test: s => count(s, String(mx(s))) === 1 } },
+
+        { n: 59, name: 'Nacho Cheese Gloop', concept: 'Digits zigzag up and down',
+          f: s => String(dsum(s)), end: E1,
+          cls: { name: 'Gloop', icon: '🫕', test: isZigzag } },
+
+        { n: 60, name: 'Cheese Doodle Crunch', concept: 'Crunch away every zero',
+          start: 'check', f: s => strip(s.replace(/0/g, '')),
+          end: v => (v.includes('0') ? null : 'Crunched') },
+
+        { n: 61, name: 'Grilled Cheese Crisp', concept: 'Count adjacent equal digit pairs',
+          f: s => { let c = 0; for (let i = 0; i + 1 < s.length; i++) if (s[i] === s[i + 1]) c++; return String(c); },
+          end: E0,
+          cls: { name: 'Crisp', icon: '🍟', test: noEqualNeighbours } },
+
+        { n: 62, name: 'Cheese Sauce Pour', concept: 'Sort the digits in descending order',
+          f: s => strip(D(s).sort((a, b) => b - a).join('')), end: () => null, fixed: 'Poured' },
+
+        { n: 63, name: 'Cheese Tray Arrangement', concept: 'Add each digit to its circular neighbour',
+          f: s => {
+            const k = s.length, d = D(s);
+            if (k === 1) return String(d[0] * d[0]);
+            let t = 0;
+            for (let i = 0; i < k; i++) t += d[i] + d[(i + 1) % k];
+            return String(t);
+          }, end: E1 },
+
+        { n: 64, name: 'Swiss Cheese Holiness', concept: 'Zeros times the digit count',
+          f: s => String(count(s, '0') * s.length), end: E1 },
+
+        { n: 65, name: 'Cheese Puff Inflate', concept: 'Every digit gets an extra copy of itself',
+          f: s => Array.from(s, c => c + c).join(''), end: () => null, capLabel: 'Overinflated' },
+
+        { n: 66, name: 'Smoked Gouda Smoke Signal', concept: 'Digit sum; signal on each odd/even switch',
+          f: s => String(dsum(s)), end: E1,
+          extra: values => {
+            let c = 0;
+            for (let i = 0; i + 1 < values.length; i++) {
+              if (Number(values[i].slice(-1)) % 2 !== Number(values[i + 1].slice(-1)) % 2) c++;
+            }
+            return `${c} signal${c === 1 ? '' : 's'}`;
+          } },
+
+        { n: 67, name: 'Cheese Shop Queue', concept: 'Serve the reverse; palindromes are served',
+          start: 'check', f: s => rev(s), end: v => (isPal(v) ? 'Served' : null),
+          cyc: 'Queue Loop', fixed: 'Queue Loop' },
+
+        { n: 68, name: 'Cheese Fondue Dip', concept: 'Each digit times the total of the others',
+          f: s => { const t = dsum(s); return String(D(s).reduce((a, d) => a + d * (t - d), 0)); }, end: E1 },
+
+        { n: 69, name: 'Pepper Jack Heat', concept: 'Digit sum; Hot when above 5 per digit',
+          f: s => String(dsum(s)), end: E1,
+          cls: { name: 'Hot', icon: '🌶️', test: s => dsum(s) > 5 * s.length } },
+
+        { n: 70, name: 'Cheese Platter Sort', concept: 'Product of the distinct digits',
+          f: s => { let p = 1n; for (const d of new Set(s)) p *= BigInt(d); return String(p); }, end: E1 },
+
+        { n: 71, name: 'Cheese Rind Peel', concept: 'Peel off the first and last digits',
+          f: s => { const r = s.slice(1, -1); return r === '' ? '0' : strip(r); },
+          end: v => (v === '0' ? 'Peeled Clean' : null) },
+
+        { n: 72, name: 'Old Cheese Mould Spread', concept: 'Mould spreads from each 7 to its neighbours',
+          f: s => {
+            let c = 0;
+            for (let i = 0; i < s.length; i++) {
+              if (s[i] === '7' || s[i - 1] === '7' || s[i + 1] === '7') c++;
+            }
+            return String(c);
+          }, end: v => (v === '0' ? 'Mould Free' : null) },
+
+        { n: 73, name: 'Cheese Crumble Topping', concept: 'Digit sum plus the number of zeros',
+          f: s => String(dsum(s) + count(s, '0')), end: at1 },
+
+        { n: 74, name: 'Cheese Slicer Sharp', concept: 'Keep the digits after the largest digit',
+          f: s => { const r = s.slice(s.indexOf(String(mx(s))) + 1); return r === '' ? '0' : strip(r); },
+          end: E1 },
+
+        { n: 75, name: 'Cheese Wedge Fraction', concept: 'Divide by the digit count, keep the whole part',
+          f: s => String(BigInt(s) / BigInt(s.length)), end: E1 },
+
+        { n: 76, name: 'Cheese Grater Dust', concept: 'Sum of the cubes of the digits',
+          f: s => String(D(s).reduce((a, d) => a + d ** 3, 0)), end: at1 },
+
+        { n: 77, name: 'Cheese Cracker Break', concept: 'Split at zeros; keep the largest piece',
+          f: s => {
+            const pieces = s.split('0').filter(p => p !== '');
+            if (!pieces.length) return '0';
+            let best = pieces[0];
+            for (const p of pieces) {
+              if (p.length > best.length || (p.length === best.length && p > best)) best = p;
+            }
+            return strip(best);
+          }, end: E1 },
+
+        { n: 78, name: 'Cheese Cloud Fluff', concept: 'Digit sum; Fluffy when that sum is a perfect square',
+          f: s => String(dsum(s)), end: E1,
+          cls: { name: 'Fluffy', icon: '☁️', test: s => isSquare(dsum(s)) } },
+
+        { n: 79, name: 'Cheese Parade Line', concept: 'Each digit adds its position',
+          f: s => String(D(s).reduce((a, d, i) => a + (i + 1) + d, 0)), end: at1 },
+
+        { n: 80, name: 'Cheese Waffle Iron', concept: 'Press every digit flat to the largest digit',
+          f: s => String(mx(s)).repeat(s.length), end: v => (isRepdigit(v) ? 'Waffled' : null) },
+
+        { n: 81, name: 'Cheese Wrap Burrito', concept: 'First digit plus last digit',
+          f: s => String(Number(s[0]) + Number(s[s.length - 1])), end: E1 },
+
+        { n: 82, name: 'Cheese Toastie Press', concept: 'Keep the first half of the digits',
+          f: s => strip(s.slice(0, Math.ceil(s.length / 2))), end: E1 },
+
+        { n: 83, name: 'Cheese Plate Stack', concept: 'Add up the running totals of the digits',
+          f: s => { let run = 0, t = 0; for (const d of D(s)) { run += d; t += run; } return String(t); },
+          end: at1 },
+
+        { n: 84, name: 'Cheese Board Game', concept: 'Keep the digits in even positions',
+          f: s => {
+            const r = Array.from(s).filter((_, i) => i % 2 === 1).join('');
+            return r === '' ? '0' : strip(r);
+          }, end: E1 },
+
+        { n: 85, name: 'Cheese Brine Bubble', concept: 'Subtract the reverse if the number is bigger',
+          f: s => { const r = rev(s); return BigInt(s) > BigInt(r) ? String(BigInt(s) - BigInt(r)) : { v: '0', label: 'Bubble Pop' }; },
+          end: E0 },
+
+        { n: 86, name: 'Cheese Hay Bale', concept: 'Digit sum; Baled when that sum is a multiple of 10',
+          f: s => String(dsum(s)), end: E1,
+          cls: { name: 'Baled', icon: '🌾', test: s => dsum(s) % 10 === 0 } },
+
+        { n: 87, name: 'Cheese Churn Butter', concept: 'Multiply each digit by its circular neighbour',
+          f: s => {
+            const k = s.length, d = D(s);
+            let t = 0;
+            for (let i = 0; i < k; i++) t += d[i] * d[(i + 1) % k];
+            return String(t);
+          }, end: E1 },
+
+        { n: 88, name: 'Cheese Cellar Damp', concept: 'Count the zeros; Damp with two or more',
+          f: s => String(count(s, '0')), end: E0,
+          cls: { name: 'Damp', icon: '💧', test: s => count(s, '0') >= 2 } },
+
+        { n: 89, name: 'Cheese Board Shuffle', concept: 'Rotate left by the first digit',
+          f: s => { const r = Number(s[0]) % s.length; return strip(s.slice(r) + s.slice(0, r)); },
+          end: () => null, fixed: 'Fixed Point' },
+
+        { n: 90, name: 'Cheese Crust Crispy', concept: 'Digit product; Crispy when it beats the digit sum',
+          f: s => String(bigProd(s)), end: E1,
+          cls: { name: 'Crispy', icon: '🥖', test: s => bigProd(s) > BigInt(dsum(s)) } },
+
+        { n: 91, name: 'Cheese Mould Garden', concept: 'Keep the first occurrence of each digit',
+          f: s => Array.from(new Set(s)).join(''), end: () => null, fixed: 'Garden Planted' },
+
+        { n: 92, name: 'Cheese Smelly Socks', concept: 'Count the odd digits; Smelly when all are odd',
+          f: s => String(D(s).filter(d => d % 2 === 1).length), end: E1,
+          cls: { name: 'Smelly', icon: '🧦', test: s => D(s).every(d => d % 2 === 1) } },
+
+        { n: 93, name: 'Cheese Dairy Farm', concept: 'Sum of each digit times the next one',
+          f: s => { let t = 0; for (let i = 0; i + 1 < s.length; i++) t += Number(s[i]) * Number(s[i + 1]); return String(t); },
+          end: E1 },
+
+        { n: 94, name: 'Cheese Snack Pack', concept: 'Sum each pack of three digits; line up the sums',
+          f: s => { let out = ''; for (let i = 0; i < s.length; i += 3) out += dsum(s.slice(i, i + 3)); return out; },
+          end: E1 },
+
+        { n: 95, name: 'Cheese Rennet Clot', concept: 'Neighbours adding to 10 clot the cheese',
+          f: s => {
+            for (let i = 0; i + 1 < s.length; i++) {
+              if (Number(s[i]) + Number(s[i + 1]) === 10) return { v: '0', label: 'Clotted' };
+            }
+            return String(dsum(s));
+          }, end: E1 },
+
+        { n: 96, name: 'Cheese Curd Squeak', concept: 'Digit sum; a squeak when a digit matches the step number',
+          f: s => String(dsum(s)), end: E1,
+          extra: values => {
+            let c = 0;
+            for (let t = 1; t < values.length && t <= 9; t++) if (values[t - 1].includes(String(t))) c++;
+            return `${c} squeak${c === 1 ? '' : 's'}`;
+          } },
+
+        { n: 97, name: 'Cheese Milk Bath', concept: 'Subtract the digit sum each step',
+          f: s => String(BigInt(s) - BigInt(dsum(s))), end: E1 },
+
+        { n: 98, name: 'Cheese Whey Drain', concept: 'Drain the largest digit, then the smallest',
+          f: s => {
+            let r = cut(s, String(mx(s)));
+            if (r === '') return '0';
+            r = cut(r, String(mn(r)));
+            return r === '' ? '0' : strip(r);
+          }, end: v => (v === '0' ? 'Drained' : null) },
+
+        { n: 99, name: 'Cheese Pickle Brine', concept: 'Digit sum times the digit count',
+          f: s => String(dsum(s) * s.length), end: () => null, fixed: 'Fixed Point' },
+
+        { n: 100, name: 'Cheese Vault Lock', concept: 'Mirror the left half onto the right half',
+          start: 'check',
+          f: s => {
+            const k = s.length, h = Math.floor(k / 2), left = s.slice(0, h);
+            return left + (k % 2 ? s[h] : '') + Array.from(left).reverse().join('');
+          },
+          end: v => (isPal(v) ? 'Unlocked' : null) }
+      ];
+
+      // Fill defaults so every rule has an end function
+      RULES.forEach(r => { r.end = r.end || (() => null); });
+
+      // ----- runner: walks the path until a terminal label, a repeat, or the cap -----
+      function run(rule, n) {
+        const ctx = rule.init ? rule.init(n) : {};
+        const cap = rule.cap ? rule.cap(n) : CAP;
+        const keyOf = rule.key || (v => v);
+        const capLabel = rule.capLabel || 'Unresolved (step cap)';
+        const values = [n];
+        const seen = new Map([[keyOf(n, 0), 0]]);
+        let cur = n, steps = 0;
+        const out = (label, terminal, kind, cycle = null) =>
+          ({ label, terminal, kind, steps, values, cycle, unresolved: kind === 'cap' });
+
+        if (rule.start === 'check') {
+          const e = rule.end(cur, 0, ctx);
+          if (e) return out(e, cur, 'end');
+        }
+        while (true) {
+          if (steps >= cap) return out(capLabel, null, 'cap');
+          const r = rule.f(cur, steps + 1, ctx);
+          steps++;
+          let nxt = r, forced = null;
+          if (r !== null && typeof r === 'object') { nxt = r.v; forced = r.label; }
+          values.push(nxt);
+          if (forced) return out(forced, nxt, 'end');
+          if (nxt.length > MAX_LEN) return out(capLabel, null, 'cap');
+          const e = rule.end(nxt, steps, ctx);
+          if (e) return out(e, nxt, 'end');
+          const key = keyOf(nxt, steps);
+          if (seen.has(key)) {
+            const from = seen.get(key);
+            const cycle = values.slice(from, -1);
+            values.pop();
+            steps--;
+            const label = cycle.length === 1 ? (rule.fixed || 'Fixed Point') : (rule.cyc || 'Cycle');
+            return out(label, null, 'cycle', cycle);
+          }
+          seen.set(key, values.length - 1);
+          cur = nxt;
+        }
+      }
+
+      function evaluate(n) {
+        return RULES.map(rule => {
+          const res = run(rule, n);
+          if (rule.extra) res.extra = rule.extra(res.values);
+          const tag = rule.cls && rule.cls.test(n) ? rule.cls.name : null;
+          return { rule, res, tag };
+        });
+      }
+
+      const MAX_INPUT = 5000; // longer inputs skip the rule book so the page stays responsive
+      let memoKey = null, memoRes = null;
+      function results(s) {
+        if (s.length > MAX_INPUT) return null;
+        if (s !== memoKey) { memoRes = evaluate(s); memoKey = s; }
+        return memoRes;
+      }
+
+      // ----- banner: class tags next to the number, plus a dropdown with all 100 results -----
+      const TAG_CLS = 'bg-orange-500/15 text-orange-200 border-orange-400/40';
+      function bannerHTML(s) {
+        const rs = results(s);
+        if (!rs) {
+          return `<span class="px-3 py-1.5 rounded-xl border border-slate-700 text-xs text-slate-400">100 Rules: inputs over ${MAX_INPUT.toLocaleString('en-US')} digits are not checked</span>`;
+        }
+        const tagged = rs.filter(x => x.tag);
+        const pills = tagged.map(x =>
+          `<span title="Rule ${x.rule.n}: ${x.rule.name}" class="px-3 py-1.5 rounded-xl border text-xs font-bold ${TAG_CLS}">${x.rule.cls.icon} ${x.tag}</span>`
+        ).join('');
+        const rows = rs.map(x =>
+          `<div class="flex items-center justify-between gap-3 px-2.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-[11px]">
+            <span class="font-mono text-slate-500 w-7 shrink-0">${x.rule.n}</span>
+            <span class="text-slate-200 flex-1 min-w-0 truncate">${x.rule.name}</span>
+            <span class="font-bold text-right shrink-0 ${x.tag ? 'text-orange-200' : 'text-white'}">${x.tag ? x.tag + ' · ' : ''}${x.res.label}</span>
+          </div>`
+        ).join('');
+        return `${pills}
+          <div class="relative inline-block res-tag-wrap">
+            <button type="button" class="res-tag-btn px-3 py-1.5 rounded-xl border border-orange-400/40 bg-orange-500/10 text-orange-200 text-xs font-bold flex items-center gap-1.5 transition-all hover:brightness-110 cursor-pointer">
+              <span>🧀</span> 100 Rules <span class="res-chevron text-[10px] opacity-70 transition-transform duration-200">▾</span>
+            </button>
+            <div class="res-tag-panel absolute left-0 top-full mt-2 z-40 w-[26rem] max-w-[90vw] rounded-2xl border border-slate-600 bg-slate-950 p-3 shadow-2xl space-y-2">
+              <div class="flex items-center justify-between text-[10px] font-mono text-slate-500">
+                <span>Cheese Block Rules</span><span>${tagged.length} tag${tagged.length === 1 ? '' : 's'}</span>
+              </div>
+              <div class="max-h-[60vh] overflow-y-auto pr-1 space-y-1">${rows}</div>
+            </div>
+          </div>`;
+      }
+
+      // ----- Rules tab view -----
+      const $ = id => document.getElementById(id);
+      let lastRes = [];
+      const short = v => (v.length > 24 ? `${v.slice(0, 10)}…${v.slice(-6)} (${v.length} digits)` : v);
+      const pill = (text, cls) => `<span class="px-2.5 py-1 rounded-lg border text-[11px] font-bold ${cls}">${text}</span>`;
+
+      function render() {
+        const s = Engine.parseDigits($('cr-input').value);
+        const sum = $('cr-summary'), tbl = $('cr-table'), det = $('cr-detail');
+        if (!s) {
+          sum.innerHTML = '<p class="text-xs text-rose-300">Enter a whole number of 1 or more.</p>';
+          tbl.innerHTML = ''; det.innerHTML = ''; return;
+        }
+        const rs = results(s);
+        if (!rs) {
+          sum.innerHTML = `<p class="text-xs text-slate-400">Inputs over ${MAX_INPUT.toLocaleString('en-US')} digits are not checked by the 100 rules.</p>`;
+          tbl.innerHTML = ''; det.innerHTML = ''; lastRes = []; return;
+        }
+        lastRes = rs;
+        const tagged = rs.filter(x => x.tag);
+        sum.innerHTML = `
+          <div class="space-y-2">
+            <div class="text-[11px] font-medium text-slate-400">Class tags for ${s}: <span class="text-orange-300 font-bold">${tagged.length}</span> of 100 rules</div>
+            <div class="flex flex-wrap gap-2">${tagged.length
+              ? tagged.map(x => pill(`${x.rule.cls.icon} ${x.tag}`, TAG_CLS)).join('')
+              : '<span class="text-xs text-slate-500">No class tags for this number.</span>'}</div>
+          </div>`;
+        tbl.innerHTML = `
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-950 text-[10px] font-mono uppercase tracking-wider text-slate-500">
+              <tr><th class="px-3 py-2">#</th><th class="px-3 py-2">Rule</th><th class="px-3 py-2 hidden md:table-cell">Concept</th><th class="px-3 py-2">Result</th><th class="px-3 py-2">Steps</th><th class="px-3 py-2">Tag</th></tr>
+            </thead>
+            <tbody>
+              ${rs.map((x, i) => `
+                <tr data-i="${i}" class="cr-row cursor-pointer border-t border-slate-800 hover:bg-slate-800/50">
+                  <td class="px-3 py-2 font-mono text-slate-500">${x.rule.n}</td>
+                  <td class="px-3 py-2 font-semibold text-slate-200">${x.rule.name}</td>
+                  <td class="px-3 py-2 text-slate-400 hidden md:table-cell">${x.rule.concept}</td>
+                  <td class="px-3 py-2 font-bold text-white">${x.res.label}</td>
+                  <td class="px-3 py-2 font-mono text-slate-300">${x.res.steps}</td>
+                  <td class="px-3 py-2">${x.tag ? `<span class="px-2 py-0.5 rounded-md border text-[10px] font-bold ${TAG_CLS}">${x.rule.cls.icon} ${x.tag}</span>` : '<span class="text-slate-600">—</span>'}</td>
+                </tr>`).join('')}
+            </tbody>
+          </table>`;
+        det.innerHTML = '<p class="text-xs text-slate-500">Select a rule to see its path.</p>';
+      }
+
+      function showDetail(i) {
+        const x = lastRes[i];
+        if (!x) return;
+        const vals = x.res.values;
+        const chips = vals.slice(0, 60).map(v =>
+          `<span class="px-2 py-1 rounded-lg bg-slate-900 border border-slate-700 font-mono text-[11px] text-slate-200 break-all">${short(v)}</span>`
+        ).join('<span class="text-slate-600 text-xs">→</span>');
+        const more = vals.length > 60 ? `<span class="text-[11px] text-slate-500">… +${vals.length - 60} more</span>` : '';
+        const cyc = x.res.cycle
+          ? `<div class="text-xs text-slate-400">Repeats: <span class="font-mono text-slate-200 break-all">${x.res.cycle.slice(0, 20).map(short).join(' → ')}${x.res.cycle.length > 20 ? ' → …' : ''} → …</span></div>`
+          : '';
+        const extra = x.res.extra ? `<div class="text-xs text-orange-300">${x.res.extra}</div>` : '';
+        $('cr-detail').innerHTML = `
+          <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-3">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <div class="text-[10px] font-mono text-orange-400 uppercase">Rule ${x.rule.n}</div>
+                <div class="text-sm font-bold text-white">${x.rule.name}</div>
+                <div class="text-xs text-slate-400">${x.rule.concept}</div>
+              </div>
+              <div class="text-right text-xs text-slate-400"><div class="font-bold text-white">${x.res.label}</div><div>${x.res.steps} step${x.res.steps === 1 ? '' : 's'}</div></div>
+            </div>
+            ${extra}
+            <div class="flex flex-wrap items-center gap-1.5">${chips}${more}</div>
+            ${cyc}
+          </div>`;
+      }
+
+      function init() {
+        $('cr-run').addEventListener('click', render);
+        $('cr-input').addEventListener('keydown', e => { if (e.key === 'Enter') render(); });
+        document.querySelectorAll('.cr-preset').forEach(btn => {
+          btn.addEventListener('click', () => { $('cr-input').value = btn.dataset.val; render(); });
+        });
+        $('cr-table').addEventListener('click', e => {
+          const tr = e.target.closest('.cr-row');
+          if (!tr) return;
+          document.querySelectorAll('#cr-table .cr-row').forEach(r => r.classList.remove('bg-slate-800/70'));
+          tr.classList.add('bg-slate-800/70');
+          showDetail(Number(tr.dataset.i));
+        });
+      }
+      document.addEventListener('DOMContentLoaded', init);
+
+      return { bannerHTML, render, results, run, RULES };
     })();
 
     // ==========================================
@@ -2793,7 +3505,7 @@
       const meltPathChips = document.getElementById('melt-path-chips');
       const meltStepsTbody = document.getElementById('melt-steps-tbody');
 
-      // Entry point: digit strings stay exact at any size; up to 250,000 uses the full rank-based view
+      // Entry point: digit strings stay exact at any size; up to 1,000,000 uses the full rank-based view
       function render(input) {
         let s = typeof input === 'string'
           ? Engine.parseDigits(input)
@@ -2803,8 +3515,8 @@
         return renderSmall(Number(s));
       }
 
-      // Display for numbers above 250,000: melt test, Resonance and Wheel are exact at any size;
-      // rank-based tiers are shown as unavailable because their ranks are only precomputed to 250,000.
+      // Display for numbers above 1,000,000: melt test, Resonance and Wheel are exact at any size;
+      // rank-based tiers are shown as unavailable because their ranks are only precomputed to 1,000,000.
       function renderBig(s) {
         const $ = id => document.getElementById(id);
         digitCountBadge.textContent = `${s.length} digits`;
@@ -2829,6 +3541,7 @@
               ${WheelView.tagsHTML(s)}
               ${RuleKit.tagsHTML('pull', s)}
               ${RuleKit.tagsHTML('sandwich', s)}
+              ${RuleBook.bannerHTML(s)}
             </div>`;
         } else {
           hero.className = "rounded-2xl p-5 border bg-gradient-to-r from-indigo-500/10 via-purple-500/5 to-slate-900 border-indigo-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-lg shadow-indigo-500/5";
@@ -2844,10 +3557,11 @@
               ${WheelView.tagsHTML(s)}
               ${RuleKit.tagsHTML('pull', s)}
               ${RuleKit.tagsHTML('sandwich', s)}
+              ${RuleBook.bannerHTML(s)}
             </div>`;
         }
 
-        const rangeNote = '<div class="text-[11px] text-slate-400 leading-relaxed">Pure Cheese, Trinity, Parmesan and defector checks use precomputed sequences up to 250,000, so they are not shown above 250,000.</div>';
+        const rangeNote = '<div class="text-[11px] text-slate-400 leading-relaxed">Pure Cheese, Trinity, Parmesan and defector checks use precomputed sequences up to 1,000,000, so they are not shown above 1,000,000.</div>';
         $('tier1-tag').textContent = m.isCheesy ? 'CHEESY' : 'MOLDY';
         $('tier1-tag').className = m.isCheesy
           ? 'text-xs font-mono font-semibold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40'
@@ -2899,7 +3613,7 @@
           : 'text-xs font-mono font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-slate-500 border border-slate-700';
         $('wheel-tag').textContent = wa.kind === 'ok' ? WheelView.displayLabel(wa) : 'INVALID';
         $('wheel-content').innerHTML = WheelView.buildHTML(wa);
-        $('ranks-tag').textContent = 'NEEDS ≤ 250,000';
+        $('ranks-tag').textContent = 'NEEDS ≤ 1,000,000';
         $('ranks-tag').className = 'text-xs font-mono font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-slate-500 border border-slate-700';
         $('ranks-content').innerHTML = RankTiers.buildHTML(s, null);
         const pcB = RuleKit.card('pull', s); $('pull-tag').className = pcB.tagClass; $('pull-tag').textContent = pcB.tagText; $('pull-content').innerHTML = pcB.html;
@@ -2955,6 +3669,7 @@
               ${RankTiers.tagsHTML(n)}
               ${RuleKit.tagsHTML('pull', String(n))}
               ${RuleKit.tagsHTML('sandwich', String(n))}
+              ${RuleBook.bannerHTML(String(n))}
               ${data.isSuper ? '<span class="px-3 py-1.5 rounded-xl bg-yellow-500/20 text-yellow-300 border border-yellow-500/40 text-xs font-bold">⚡ Super Cheese</span>' : ''}
               ${data.isPure ? '<span class="px-3 py-1.5 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-bold">👑 Pure Cheese</span>' : ''}
               ${data.isHappyTrinity ? '<span class="px-3 py-1.5 rounded-xl bg-amber-400/25 text-amber-200 border border-amber-400 text-xs font-black shadow-md shadow-amber-500/20">✨ Happy Trinity #' + data.htRank + '</span>' : ''}
@@ -2998,6 +3713,7 @@
               ${RankTiers.tagsHTML(n)}
               ${RuleKit.tagsHTML('pull', String(n))}
               ${RuleKit.tagsHTML('sandwich', String(n))}
+              ${RuleBook.bannerHTML(String(n))}
               ${data.isBlue ? '<span class="px-3 py-1.5 rounded-xl bg-blue-500/20 text-blue-300 border border-blue-500/40 text-xs font-bold">🔵 Blue Cheese</span>' : ''}
               ${data.isExtraStinky ? '<span class="px-3 py-1.5 rounded-xl bg-purple-500/20 text-purple-300 border border-purple-500/40 text-xs font-bold">🦨 Extra Stinky</span>' : ''}
               ${data.isHappyTrinity ? `
